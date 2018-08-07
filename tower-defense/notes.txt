@@ -1,0 +1,22 @@
+08/07
+Just made the project. Intending for the game to be top-down like old zelda games. Will have
+day-night cycle with town-building in the day and tower-defense at night. Town-building will 
+have neighbors like Animal Crossing and will require infrastructure like in Cities Skyline, but 
+all infrastructure also has a purpose in defense of the town. For example, making walkways 
+along the walls and from the walls to inner guard towers will not only reduce crime, but also 
+allow the player to have access to higher ground if the enemies get in the gates.
+Project milestones to achieve in the near future:
+	1) renderer works
+	2) tilemap works
+	3) player movement works
+	4) camera works
+	5) entity-component system w/ entity factory
+	6) collisions
+	7) single room with four enemies
+	8) attacks and more input
+	9) enemy AI (adaptive to number of allies??)
+	10) basic menu system
+
+Later, implement the actual city map, building inside the city, multiple floors of the city,
+the day-night cycle and the tower defense. Also NPCs with conversation and quests. Saving the 
+game, handling game-overs and such can happen much later.

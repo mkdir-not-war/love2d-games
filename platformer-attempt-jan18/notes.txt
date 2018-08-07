@@ -1,0 +1,36 @@
+before 7/1/18
+Wanted this game to be multiplayer. Still think it should be. But implementing 
+multiplayer can come slightly later, hopefully. Just keep in mind that it's 
+probably something I'm going to want to do.
+
+
+7/1/18
+I think I'm going to try to exclude all sloped surfaces from the game. It's going 
+to decrease the complexity of collisions substantially, as well as the camera logic. 
+Also, it's going to make defining level layouts in data a lot easier, I think. But 
+any verticality that would otherwise be stairs in the game needs to be platforms 
+instead. Consider the spiral tower example.
+
+Instead of using a dynamic camera that moves based on whether the player is grounded, 
+maybe I'll make a prop-area that locks the camera onto the "ground" when the player 
+collides with it, and have the camera lock-on to the player at all times otherwise. 
+Can define the ground of a prop-area as the bottom y-axis of the area, assuming it's 
+rectangular.
+
+The props in a map will be locked to a grid. This will make collision detection way 
+way way easier.
+
+
+7/2/18
+I think the GE_actor class and GE_prop class are extraneous. The only 
+class-specific behavior that actor has is its udpate function that handles 
+physics, which will be encapsulated in a physics component soon. Will delete 
+those files and update subclasses when I make the physics component.
+
+Apparently I've been doing OOP completely wrong for Lua. Member variables, 
+private variables, global variables, etc are all defined differently than 
+how I've done it up to this point and my "new" "functions" are fucked too.
+I desparately want to go back to C++, but I like the Love2d engine so far. 
+Maybe I should go through the Love2D library and just use the cpp files
+themselves. I could shrink the package size that way too since I know I'm 
+not going to use some of the files, like love.physics.

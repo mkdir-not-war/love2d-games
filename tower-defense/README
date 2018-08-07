@@ -1,0 +1,10 @@
+TO RUN :
+	1) download and install lua @ https://www.lua.org/download.html
+	2) download and install love2d:
+		LINUX:
+		sudo add-apt-repository ppa:bartbes/love-stable
+		sudo apt-get update
+
+		MAC:
+		https://bitbucket.org/rude/love/downloads/love-11.1-macos.zip
+	3) bash run.sh
